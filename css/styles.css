@@ -124,6 +124,7 @@ img {
 /*Main page*/
 .hero {
   background-color: #2f303a;
+  background-image: rgba(47, 48, 58, 0.4), url(./images/ImgOverlay.png);
   text-align: center;
   padding: 200px 0;
 }
