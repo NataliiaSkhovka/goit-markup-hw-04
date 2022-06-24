@@ -130,7 +130,8 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url('../images/Img.jpg');
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/Img.jpg');
   background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
@@ -187,6 +188,28 @@ img {
 .benefits-item:not(:last-child) {
   margin-right: 30px;
 }
+.benefits-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.icon-antena::before {
+  background-image: url(../images/icons/antena.svg);
+}
+.icon-rectangle::before {
+  background-image: url(../images/icons/Rectangle.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/icons/Diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/icons/Astronaut.svg);
+}
 .text-benefits {
   line-height: 1.71;
   color: var(--main-text-color);
@@ -235,6 +258,12 @@ img {
   display: flex;
 }
 .img-title-item:not(:last-child) {
+  margin-right: 30px;
+}
+.list-clients {
+  display: flex;
+}
+.list-clients:not(:last-child) {
   margin-right: 30px;
 }
 /*Portfolio*/
