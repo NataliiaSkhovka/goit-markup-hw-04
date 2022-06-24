@@ -332,6 +332,9 @@ img {
   background-color: #2f303a;
   padding: 60px 0;
 }
+.footer-container {
+  display: flex;
+}
 .footer-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -363,5 +366,13 @@ img {
 }
 .btm-port .active {
   background-color: var(--accent-color);
+  color: var(--primery-white-color);
+}
+.social-title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+
   color: var(--primery-white-color);
 }
