@@ -409,6 +409,7 @@ img {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -445,7 +446,6 @@ img {
 }
 .footer-social-thumb {
   margin-left: 70px;
-  padding-top: 15px;
 }
 .footer-social-title {
   font-weight: 700;
