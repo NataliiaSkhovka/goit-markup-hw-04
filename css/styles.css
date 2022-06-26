@@ -98,7 +98,8 @@ img {
 }
 .header-link,
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -110,25 +111,23 @@ img {
   margin-left: auto;
   display: flex;
 }
-.contact-link,
-.mail-icon,
-.tell-icon {
+.contact-link {
   color: var(--main-text-color);
 }
 .header-link:hover,
 .header-link:focus,
 .contact-link:hover,
 .contact-link:focus,
-.mail-icon:hover,
-.mail-icon:focus,
-.tell-icon:hover,
-.tell-icon:focus,
 .accent,
 .current {
   color: var(--accent-color);
 }
 .mail-icon,
-.tell-icon {
+.tel-icon {
+  fill: currentColor;
+}
+.mail-icon,
+.tel-icon {
   margin-right: 10px;
 }
 /*Main page*/
@@ -176,6 +175,7 @@ img {
 .main-btn:focus {
   color: var(--primery-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 .about-benefits {
@@ -301,13 +301,9 @@ img {
   display: flex;
   font-size: 36px;
   line-height: 1.16;
-  width: 170px;
-  height: 92px;
   margin-top: 50px;
   margin-bottom: 94px;
-
   padding: 0;
-  justify-content: center;
   text-align: center;
 }
 .clients-icon-item:not(last-child) {
@@ -327,11 +323,16 @@ img {
 .clients-icon {
   fill: currentColor;
 }
-.clients-icon-link :hover,
-.clients-icon-link :focus {
-  background-color: #2196f3;
-  color: #ffffff;
+.clients-icon-link:hover,
+.clients-icon-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
+/*.clients-icon-item:hover .clients-icon,
+.clients-icon-item:focus .clients-icon {
+  fill: var(--accent-color);
+}/*
+
 
 /*Portfolio*/
 .btn-port {
@@ -351,6 +352,8 @@ img {
 .btn-port:focus {
   color: var(--primery-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-port.active {
   color: var(--primery-white-color);
@@ -378,7 +381,11 @@ img {
   margin-bottom: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
-
+.cards-port:hover,
+.cards-port:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .title-port {
   font-weight: 700;
   font-size: 18px;
