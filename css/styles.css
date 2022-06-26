@@ -443,19 +443,23 @@ img {
   background-color: var(--accent-color);
   color: var(--primery-white-color);
 }
+.footer-social-thumb {
+  display: flex;
+  margin-left: 70px;
+  padding-top: 15px;
+}
 .footer-social-title {
   font-weight: 700;
-  font-weight: 14px;
   line-height: 1.14;
-
   color: var(--primery-white-color);
+  margin-bottom: 20px;
 }
 .footer-social-links {
   display: flex;
   width: 206px;
   height: 44px;
   margin-top: 20px;
-  margin-left: 32px;
+  align-items: center;
   padding: 0;
   justify-content: center;
 }
