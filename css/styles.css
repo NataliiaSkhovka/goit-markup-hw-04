@@ -459,7 +459,6 @@ img {
 }
 .footer-social-links {
   display: flex;
-  width: 206px;
   height: 44px;
   align-items: baseline;
   padding: 0;
